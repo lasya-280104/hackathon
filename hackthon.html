@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>University Course Selection System</h1>
+        <nav>
+            <ul>
+                <li><a href="#course-selection">Course Selection</a></li>
+                <li><a href="#teacher-profiles">Teacher Profiles</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-selection">
+            <h2>Course Selection</h2>
+            <form id="selection-form">
+                <label for="theory-courses">Select 4 Theory Courses:</label>
+                <select id="theory-courses" multiple required>
+                    <option value="theory1">Theory Course 1</option>
+                    <option value="theory2">Theory Course 2</option>
+                    <option value="theory3">Theory Course 3</option>
+                    <option value="theory4">Theory Course 4</option>
+                </select>
+
+                <label for="lab-courses">Select 2 Lab Courses:</label>
+                    <input type="checkbox"/>Lab Course 1<br>
+                    <input type="checkbox"/>Lab Course 2<br>
+                    <input type="checkbox"/>Lab Course 3<br>
+
+                <label for="teachers">Select Teachers for Each Course:</label>
+                <select id="teachers" required>
+                    <option value="teacher1">Teacher 1</option>
+                    <option value="teacher2">Teacher 2</option>
+                    <option value="teacher3">Teacher 3</option>
+                </select>
+
+                <button type="submit">Submit Selection</button>
+            </form>
+        </section>
+
+        <section id="teacher-profiles">
+            <h2>Teacher Profiles</h2>
+            <div class="profile">
+                <h3>Teacher Name</h3>
+                <p><strong>Ratings:</strong> 4.5/5 (Last 4 Years)</p>
+                <p><strong>Research Projects:</strong> Project A, Project B</p>
+                <p><strong>Patents:</strong> Patent 1, Patent 2</p>
+                <p><strong>Academic Background:</strong> PhD in Subject</p>
+            </div>
+            <!-- Repeat for more teacher profiles -->
+        </section>
+
+        <section id="feedback">
+            <h2>Submit Feedback</h2>
+            <form id="feedback-form">
+                <label for="teacher-feedback">Select Teacher:</label>
+                <select id="teacher-feedback" required>
+                    <option value="teacher1">Teacher 1</option>
+                    <option value="teacher2">Teacher 2</option>
+                    <option value="teacher3">Teacher 3</option>
+                </select>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 University Course Selection System</p>
+    </footer>
+</body>
+</html>
